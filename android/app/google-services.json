@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "712968422534",
+    "project_id": "psiquiatrias",
+    "storage_bucket": "psiquiatrias.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:712968422534:android:d95dbacd0be94fac317d07",
+        "android_client_info": {
+          "package_name": "com.example.psiquiatria_santa_clara"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "712968422534-rbat8aor67smtru4p0omkmqupb3v300r.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCd6eF17FYrA2mIp8lmsLe2qU0JsFDZtZg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "712968422534-rbat8aor67smtru4p0omkmqupb3v300r.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
