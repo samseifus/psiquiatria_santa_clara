@@ -31,72 +31,77 @@ final List<Medicamento> medicamentos = [
     tipo: "Estabilizador del estado de ánimo",
     nombre: "Litio",
     dosisInicio: "300 mg 2-3 veces al día, ajustando según niveles plasmáticos",
-    dosisMaxima: "900-1200 mg al día, ajustando según niveles plasmáticos",
-    presentacion: "Tabletas, cápsulas, solución oral",
+    dosisMaxima:
+        "900-1200 mg al día, ajustando según niveles plasmáticos. Para manía 1-1.5 mEq/L, Depresión 0.6-1 mEq/L, Mantenimiento 0.7-1 mEq/L",
+    presentacion:
+        "Tabletas 300mg o 450mg, cápsulas 150, 300 o 600mg, solución oral 8mEq/5mL",
     vidaMedia: "20-24 horas",
     inicio: "Puede tardar varias semanas en mostrar efectos terapéuticos",
     mecanismoAccion:
-        "Inhibe la recaptación de neurotransmisores, como la serotonina y la noradrenalina, y afecta la señalización intracelular",
-    indicaciones: "Trastornos afectivos, especialmente trastorno bipolar",
+        "Inhibe la recaptación de neurotransmisores, como la serotonina y la noradrenalina, y afecta la señalización intracelular. (fosfatidil inositol, modulación de proteínas G e inhibición de las glucógeno sintasa quinasa 3)",
+    indicaciones:
+        "Trastornos afectivos, especialmente para el trastorno bipolar con episodios de predominancia maníacos. Antes de comenzar el tratamiento, función renal y perfil tiroideo. Electrocardiograma a pacientes mayores de 50 años. Monitorizar litemia cada semana hasta alcanzar la concentración deseada en plasma, luego tomar prueba cada 2-3 meses por 6 meses, finalmente, cada semestre",
     efectosAdversos:
-        "Temblores, poliuria, polidipsia, diarrea, vómitos, aumento de peso",
+        " Toxicidad: Temblores, ataxia, diarrea, vómitos, sedación. Otros incluyen: Aumento de peso, leucocitosis, poliuria, polidipsia.",
     contraindicaciones:
-        "Insuficiencia renal, hipotiroidismo, deshidratación, uso concomitante de diuréticos",
+        "Insuficiencia renal, hipotiroidismo, deshidratación, uso concomitante de diuréticos, síndrome de Brugada, menor de 7 años",
   ),
   Medicamento(
     tipo: "Antiepiléptico y estabilizador del estado de ánimo",
-    nombre: "Valproato sódico",
-    dosisInicio:
-        "Dependiendo de la indicación, de 250 a 500 mg 2-3 veces al día",
-    dosisMaxima: "Dependiendo de la indicación, de 1000 a 3000 mg al día",
-    presentacion: "Cápsulas, tabletas, solución oral, inyectable",
+    nombre: "Valproato",
+    dosisInicio: "15 mg/Kg dividido en 2 dosis",
+    dosisMaxima:
+        "60mg/Kg/día. Manía: 1200-1500 mg/día, Migraña 500-1000 mg/día y Epilepsia 10-60 mg/Kg",
+    presentacion:
+        "Tabletas 125, 250, 500mg, cápsulas 125mg, solución oral 50mg/mL",
     vidaMedia: "9-16 horas",
     inicio: "Puede tardar varias semanas en mostrar efectos terapéuticos",
     mecanismoAccion:
-        "Desconocido, pero se cree que afecta la señalización de neurotransmisores y la estabilidad de las membranas neuronales",
-    indicaciones: "Trastorno bipolar, epilepsia, migraña",
+        "Bloquea los canales de sodio sensibles al voltaje, aumentando la concentración de GABA",
+    indicaciones:
+        "Manía aguda y episodios mixtos en trastorno bipolar, convulsiones parciales complejas, crisis de ausencia, profilaxis migrañosa. Antes de comenzar el tratamiento, cuadro hemático, pruebas de coagulación y pruebas de función hepática. Si el paciente tiene sobrepeso, realizar prueba de glucosa en ayuno y perfil lipídico. Luego de iniciar el tratamiento, monitorizar el peso del paciente.",
     efectosAdversos:
-        "Náuseas, vómitos, diarrea, sedación, aumento de peso, alopecia, temblor",
+        "Más peligrosos: Arritmias, hepatotoxicidad, pancreatitis, DRESS. Otros: sedación, mareo, ataxia, astenia, cefalea, dolor abdominal, vómitos, reducción del apetito, alopecia, enfermedad de ovario poliquístico, hiperandrogenismo, hiperinsulinemia, trombocitopenia",
     contraindicaciones:
-        "Hipersensibilidad conocida al valproato, trastornos hepáticos graves, porfiria",
+        "Pancreatitis, falla hepática, hipersensibilidad al valproato. No usar durante el primer trimestre de la gestación.",
   ),
   Medicamento(
     tipo: "Antiepiléptico y estabilizador del estado de ánimo",
     nombre: "Carbamazepina",
-    dosisInicio:
-        "200-400 mg al día, ajustando según respuesta clínica y niveles plasmáticos",
-    dosisMaxima:
-        "1200-1600 mg al día, ajustando según respuesta clínica y niveles plasmáticos",
-    presentacion: "Tabletas, cápsulas, suspensión oral",
-    vidaMedia: "24 horas",
-    inicio: "Puede tardar varias semanas en mostrar efectos terapéuticos",
+    dosisInicio: " 400 mg/día divididos en 2 dosis. Aumentar cada semana",
+    dosisMaxima: "1200mg/día. Menores de 6 años: 20 mg/Kg/día",
+    presentacion: "Tabletas 100-200mg, suspensión oral 20mg/mL",
+    vidaMedia: "12- 17 horas",
+    inicio:
+        "Puede tardar varias semanas en mostrar efectos terapéuticos. Se espera reducción de convulsiones en 2 semanas",
     mecanismoAccion:
-        "Bloquea los canales de sodio, reduciendo la actividad neuronal",
+        "Bloquea los canales de sodio sensibles al voltaje e interactúa en subunidad formadora de poros alfa de los mismos, inhibiendo la liberación de glutamato",
     indicaciones:
-        "Trastornos afectivos, especialmente trastorno bipolar, epilepsia, neuralgia del trigémino",
+        "Manía aguda/mixta, depresión bipolar, psicosis y esquizofrenia. Crisis parciales con sintomatología compleja, epilepsia mayor, neuralgia del trigémino. Antes de comenzar el tratamiento, cuadro hemático, pruebas de función hepática, renal y tiroidea. Luego de iniciar el tratamiento, cuadro hemático cada 2 semanas por dos meses y luego trimestral. Monitorizar sodio por la posibilidad de hiponatremia. En pacientes renales, reducir dosis. No usar durante el primer trimestre en gestantes",
     efectosAdversos:
-        "Sedación, mareo, visión borrosa, náuseas, vómitos, rash cutáneo",
+        "Más peligrosos: Anemia aplásica, agranulocitosis, síndrome de Stevens-Johnson, SIADH. Otros: Aumento de las convulsiones generalizadas, sedación, mareo, confusión, nausea, vómitos, diarrea, visión borrosa, leucopenia benigna, rash cutáneo, disminución del deseo sexual",
     contraindicaciones:
-        "Hipersensibilidad conocida a la carbamazepina, antecedentes de depresión medular, glaucoma de ángulo cerrado",
+        "Historia de supresión medular, hipersensibilidad a cualquier tricíclico, hipersensibilidad a carbamazepina, glaucoma de ángulo cerrado",
   ),
   Medicamento(
     tipo: "Antiepiléptico y estabilizador del estado de ánimo",
     nombre: "Lamotrigina",
     dosisInicio:
-        "25 mg al día durante 2 semanas, luego aumentar a 50 mg al día durante 2 semanas, después a 100 mg al día durante 1-2 semanas, ajustando según respuesta clínica y niveles plasmáticos",
+        " 25 mg/día por dos semanas, luego 50mg/día por dos semanas. Duplicar semanalmente hasta la dosis deseada",
     dosisMaxima:
-        "Dependiendo de la indicación, de 200 a 400 mg al día, ajustando según respuesta clínica y niveles plasmáticos",
-    presentacion: "Tabletas, dispersables, tabletas masticables",
-    vidaMedia: "24-32 horas",
-    inicio: "Puede tardar varias semanas en mostrar efectos terapéuticos",
+        "600 mg/día. Trastorno bipolar: 100-200 mg/día, Epilepsia 300-500 mg/día",
+    presentacion: "Tabletas 25, 50, 100, 150, 200, 250 mg",
+    vidaMedia: "33 horas",
+    inicio:
+        "Puede tardar varias semanas en mostrar efectos terapéuticos. Puede haber reducción de convulsiones en 2 semanas, pero la mejoría puede tardar meses.",
     mecanismoAccion:
-        "Bloquea los canales de sodio, reduciendo la actividad neuronal, y modula la liberación de glutamato y GABA",
+        "Bloquea los canales de sodio sensibles a voltaje e interactúa con la subunidad formadora de poros alfa. Inhibe la liberación de glutamato y aspartato",
     indicaciones:
-        "Trastornos afectivos, especialmente trastorno bipolar, epilepsia",
+        "Mantenimiento en trastorno bipolar, depresión bipolar, convulsiones parciales, síndrome de Lennox-Gastaut. No requiere ninguna prueba antes de iniciar. Se considera realizar controles oftalmológicos dada la unión a la melanina. Duplicar dosis si se usa en conjunto con carbamazepina y disminuir a la mitad si con valproato.",
     efectosAdversos:
-        "Erupción cutánea, mareo, somnolencia, náuseas, vómitos, dolor de cabeza",
+        "Más peligrosos: Síndrome de Stevens-Johnson, discrasias sanguíneas, meningitis aséptica, linfohistiocitosis.  Otros: Rash cutáneo, visión doble, sedación, temblor, náusea, vómitos, dispepsia, rinitis",
     contraindicaciones:
-        "Hipersensibilidad conocida a la lamotrigina, antecedentes de rash cutáneo con carbamazepina o valproato, uso concomitante de inhibidores de la UGT1A4",
+        "Hipersensibilidad a la lamotrigina, antecedente de rash cutáneo con carbamazepina o valproato, uso concomitante de inhibidores de UGT1A4",
   ),
   Medicamento(
     tipo: "Antiepiléptico y posiblemente estabilizador del estado de ánimo",
@@ -370,6 +375,60 @@ final List<Medicamento> medicamentos = [
           "Náuseas, diarrea, sequedad de boca, sudoración, fatiga, somnolencia, insomnio, disminución de la libido",
       contraindicaciones:
           "Hipersensibilidad conocida a la paroxetina o a otros inhibidores selectivos de la recaptación de serotonina, uso concomitante de inhibidores de la monoaminooxidasa"),
+  Medicamento(
+    tipo: "Antidepresivo",
+    nombre: "Fluvoxamina",
+    dosisInicio:
+        "50 mg a la hora de dormir, ajustando cada 4-7 días hasta dosis mínima de 100mg",
+    dosisMaxima: "300 mg/día",
+    presentacion: "Tabletas",
+    vidaMedia: "14-16 horas o 17 a 26 horas en ancianos",
+    inicio: "Puede tardar entre 4 a 8 semanas en mostrar efectos terapéuticos",
+    mecanismoAccion:
+        "Inhibe la recaptación de serotonina con efecto mínimo o nulo en la recaptación de norepinefrina o dopamina, no se adhiere de forma significativa a receptores  α-adrenérgicos, histamínicos o colinérgicos",
+    indicaciones:
+        "Trastorno Obsesivo compulsivo y Trastornos afectivos (Episodio depresivo mayor, ansiedad generalizada, ansiedad social).",
+    efectosAdversos:
+        "Cefalea, insomnio, mareo, náuseas, diarrea, xerostomía, anorexia, eyaculación retardada, anorgasmia, pruebas hepáticas anormales, hiperquinesia, hipoquinesia",
+    contraindicaciones:
+        "Se contraindica con la administración simultánea de Alosetron, Thioridazina o Tizanidina. IMAO: Esperar 14 días después de la interrumpir la toma de IMAO para iniciar la toma de Fluvoxamina ",
+  ),
+  Medicamento(
+    tipo: "Antidepresivo",
+    nombre: "Venlafaxina",
+    dosisInicio:
+        "37,5 mg en la mañana, ajustando cada 4-7 días hasta dosis mínima de 75 mg",
+    dosisMaxima: "375 mg/día",
+    presentacion: "Tabletas, comprimidos",
+    vidaMedia: "7-14 horas",
+    inicio: "Puede tardar entre 4 a 8 semanas en mostrar efectos terapéuticos",
+    mecanismoAccion:
+        "Inhibe la recaptación de serotonina y norepinefrina neuronales e inhibe de forma débil la recaptación de dopamina. No tiene actividad importante en los receptores colinérgicos muscarínicos, H1-histaminérgicos o α2-adrenérgicos. En dosis bajas (37,5 mg/día) funciona como un ISRS y tiene acción dual en dosis superiores a 225mg/día ",
+    indicaciones:
+        "Trastorno de ansiedad generalizada, episodio depresivo mayor (unipolar), trastorno de pánico, trastorno de ansiedad social.",
+    efectosAdversos:
+        "Cefalea, insomnio, mareo, náuseas, diarrea, xerostomía, anorexia, eyaculación retardada, anorgasmia, pruebas hepáticas anormales, hiperquinesia, hipoquinesia",
+    contraindicaciones:
+        "Se contraindica en pacientes con hipersensibilidad a la Venlafaxina o cualquier componente de su formulación. IMAO: Esperar 14 días después de la interrumpir la toma de IMAO para iniciar la toma de Venlafaxina",
+  ),
+  Medicamento(
+    tipo: "Antidepresivo",
+    nombre: "Duloxetina",
+    dosisInicio: "40 a 60 mg por día dividido en 2 tomas o en 1 sola.",
+    dosisMaxima:
+        "60 mg/día, aunque algunos pacientes se pueden beneficiar de incrementos de 30mg/día en intervalos de >1 semana según tolerancia",
+    presentacion: "Tabletas, comprimidos, cápsulas",
+    vidaMedia: "8-17 horas",
+    inicio: "Puede tardar entre 4 a 8 semanas en mostrar efectos terapéuticos",
+    mecanismoAccion:
+        "Es un potente inhibidor de la recaptación de serotonina y norepinefrina con débil inhibición en la recaptación de dopamina. No tiene actividad significativa para receptores colinérgicos H1-histaminérgicos y α2-adrenérgicos. No posee actividad IMAO.",
+    indicaciones:
+        "Trastorno Obsesivo compulsivo y Trastornos afectivos: Depresión, ansiedad, fibromialgia, trastorno de ansiedad generalizada, episodio depresivo mayor (unipolar), dolor musculoesquelético crónico, dolor neuropático asociado a Diabetes Mellitus",
+    efectosAdversos:
+        "Cefalea, insomnio, mareo, náuseas, diarrea, xerostomía, anorexia, eyaculación retardada, anorgasmia, pruebas hepáticas anormales, hiperquinesia, hipoquinesia",
+    contraindicaciones:
+        "Se contraindica en pacientes con hipersensibilidad a la Duloxetina o cualquier componente de su formulación. IMAO: Esperar 14 días después de la interrumpir la toma de IMAO para iniciar la toma de Duloxetina ",
+  ),
   Medicamento(
       tipo: "Antidepresivo tricíclico",
       nombre: "Nortriptilina",

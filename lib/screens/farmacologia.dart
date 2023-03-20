@@ -2,7 +2,14 @@ import 'package:flutter/material.dart';
 
 import '../data/medicamento.dart';
 
-class Farmacologia extends StatelessWidget {
+class Farmacologia extends StatefulWidget {
+  const Farmacologia({super.key});
+
+  @override
+  State<Farmacologia> createState() => _FarmacologiaState();
+}
+
+class _FarmacologiaState extends State<Farmacologia> {
   final Map<String, Color> colores = {
     'Estabilizador del estado de ánimo': Colors.blue[100]!,
     'Antiepiléptico y estabilizador del estado de ánimo': Colors.blue[50]!,
@@ -10,6 +17,7 @@ class Farmacologia extends StatelessWidget {
     'Antipsicótico típico': Colors.green[100]!,
     'Antidepresivo': Colors.orange[100]!,
     'Antidepresivo tricíclico': Colors.orange[200]!,
+    'Antidepresivo IMAO': Colors.deepOrange[200]!,
     'Benzodiacepina': Colors.purple[100]!,
   };
 
@@ -35,22 +43,27 @@ class Farmacologia extends StatelessWidget {
                 context: context,
                 builder: (BuildContext context) {
                   return AlertDialog(
+                    backgroundColor: color,
                     title: Text('${medicamento.tipo} - ${medicamento.nombre}'),
-                    content: Column(
-                      mainAxisSize: MainAxisSize.min,
-                      crossAxisAlignment: CrossAxisAlignment.start,
-                      children: [
-                        Text('Dosis inicial: ${medicamento.dosisInicio}'),
-                        Text('Dosis máxima: ${medicamento.dosisMaxima}'),
-                        Text('Presentación: ${medicamento.presentacion}'),
-                        Text(
-                            'Mecanismo de acción: ${medicamento.mecanismoAccion}'),
-                        Text('Indicaciones: ${medicamento.indicaciones}'),
-                        Text(
-                            'Efectos adversos: ${medicamento.efectosAdversos}'),
-                        Text(
-                            'Contraindicaciones: ${medicamento.contraindicaciones}'),
-                      ],
+                    content: SingleChildScrollView(
+                      child: Column(
+                        mainAxisSize: MainAxisSize.min,
+                        crossAxisAlignment: CrossAxisAlignment.start,
+                        children: [
+                          Text('Dosis inicial: ${medicamento.dosisInicio}\n'),
+                          Text('Dosis máxima: ${medicamento.dosisMaxima}\n'),
+                          Text('Presentación: ${medicamento.presentacion}\n'),
+                          Text('Vida Media: ${medicamento.vidaMedia}\n'),
+                          Text('Inicio: ${medicamento.inicio}\n'),
+                          Text(
+                              'Mecanismo de acción: ${medicamento.mecanismoAccion}\n'),
+                          Text('Indicaciones: ${medicamento.indicaciones}\n'),
+                          Text(
+                              'Efectos adversos: ${medicamento.efectosAdversos}\n'),
+                          Text(
+                              'Contraindicaciones: ${medicamento.contraindicaciones}\n'),
+                        ],
+                      ),
                     ),
                   );
                 },

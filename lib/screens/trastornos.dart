@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-
 import '../data/trastornosDatos.dart';
 
 class Trastornos extends StatefulWidget {
@@ -10,15 +9,6 @@ class Trastornos extends StatefulWidget {
 }
 
 class TrastornosState extends State<Trastornos> {
-  final Map<String, Color> color = {
-    'Estabilizador del estado de ánimo': Colors.blue[100]!,
-    'Antiepiléptico y estabilizador del estado de ánimo': Colors.blue[50]!,
-    'Antipsicótico atípico': Colors.red[100]!,
-    'Antipsicótico típico': Colors.green[100]!,
-    'Antidepresivo': Colors.orange[100]!,
-    'Antidepresivo tricíclico': Colors.orange[200]!,
-    'Emergencia': Colors.purple[100]!,
-  };
   @override
   void initState() {
     super.initState();
@@ -31,6 +21,7 @@ class TrastornosState extends State<Trastornos> {
         title: const Text('Trastornos'),
       ),
       body: ListView.builder(
+        
         itemCount: trastornos.length,
         itemBuilder: (context, index) {
           Trastorno trastorno = trastornos[index];
